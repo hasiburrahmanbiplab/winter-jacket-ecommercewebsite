@@ -108,7 +108,7 @@ header{
 }
 .banner-text p{
     font-size: 16px;
-    font-family: var(f);
+    font-family: var(--font-family);
 }
 .banner-text .banner-btn a{
     width: 130px;
@@ -136,6 +136,39 @@ header{
 }
 /* brands part End */
 /* just part start */
+#just-section{
+    background: var(--white);
+}
+.just-header h2{
+    font-size: 40px;
+    font-family: var(--font-family);
+}
+.just-slider{
+    position: relative;
+}
+.just-slider .slick-dots{
+    display: flex !important;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: -70px;
+    right: 30px;
+}
+.just-slider .slick-dots li button{
+    display: none;
+}
+.just-slider .slick-dots li{
+    width: 6px;
+    height: 6px;
+    background: rgb(104, 103, 103);
+    border-radius: 50%;
+    outline: 1px solid transparent;
+    outline-offset: 1px;
+}
+.just-slider .slick-dots .slick-active{
+    background: black;
+    outline: 1px solid  rgb(104, 103, 103) ;
+}
 .card-group .card-body p{
     font-size: 16px;
     font-family: var(--font-family);
@@ -191,7 +224,7 @@ header{
 }
 .card-group .card-img .overly-3{
     width: 92%;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,6 +238,7 @@ header{
 .card-group .card-img .overly-3 a{
     font-size: 14px;
     font-family: var(--font-family);
+    border-bottom: 1px solid var(--white);
 }
 .card-group .card-img:hover .overly-2{
     right: 5%;
