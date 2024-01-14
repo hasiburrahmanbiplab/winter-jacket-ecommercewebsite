@@ -42,6 +42,9 @@ img{
     vertical-align: middle;
 }
 /* hero part start */
+#hero-section{
+    background: var(--white);
+}
 .navbar-toggler{
     padding: 0;
     background: transparent;
@@ -61,7 +64,7 @@ header{
 }
 .inner-item .part-1 p{
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 16px;
 }
 .inner-item .header-btn button{
     font-size: 14px;
@@ -71,24 +74,145 @@ header{
    transform: rotate(-20deg);
 }
 .main-navbar .main-nav > li .nav-link{
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--font-family);
     color: var(--primary);
 }
 .main-navbar .main-nav li .dropdown-menu{
    width: 50px;
-   background: rgba(104, 102, 102, 0.356);
+   background: rgba(255, 255, 255, 0.356);
    padding: 0;
    border: 0;
+   border-radius: 0;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.397);
+   z-index: 1000;
 }
 .main-navbar .main-nav li .dropdown-menu li{
     display:block;
 }
 .main-navbar .main-nav li .dropdown-menu li a{
-   font-size: 14px;
+   font-size: 16px;
    font-family: var(--font-family);
    color: var(--primary);
    font-weight: 400;
 }
+.banner-part{
+    background: var(--banner-color);
+}
+.banner-text{
+    max-width: 350px;
+}
+.banner-text h1{
+    font-size: 60px;
+    font-family: var(--font-family);
+}
+.banner-text p{
+    font-size: 16px;
+    font-family: var(f);
+}
+.banner-text .banner-btn a{
+    width: 130px;
+    height: 35px;
+    background: var(--blue);
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+.banner-text .banner-btn a:hover{
+    box-shadow: 0 0 10px var(--blue);
+}
 /* hero part End */
+/* brands part start */
+.brands-header span{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.brands-logo ul li{
+    width: 140px;
+    height: 50px;
+}
+.brands-logo ul li img{
+    width: 100%;
+    height:100%;
+}
+/* brands part End */
+/* just part start */
+.card-group .card-body p{
+    font-size: 16px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+}
+.card-group .card-body span{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.card-group .card{
+    margin: 0 20px;
+}
+.card-group .card .card-img{
+    position: relative;
+    overflow: hidden;
+}
+.card-group .card-img .overly-1{
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0 0 10px var(--white);
+    border-radius: 5px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.card-group .card-img .overly-1 a{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: var(--font-family);
+}
+.card-group .card-img .overly-2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0 0 10px var(--white);
+    position: absolute;
+    right: -100%;
+    top: 5%;
+    transition: ease-in-out 0.4s;
+}
+.card-group .card-img .overly-2 a{
+    width: 100%;
+    height: 100%;
+}
+.card-group .card-img .overly-3{
+    width: 92%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    right: -100%;
+    bottom: 5%;
+    transition: ease-in-out 0.4s;
+}
+.card-group .card-img .overly-3 a{
+    font-size: 14px;
+    font-family: var(--font-family);
+}
+.card-group .card-img:hover .overly-2{
+    right: 5%;
+    transition: ease-in-out 0.4s;
+}
+.card-group .card-img:hover .overly-3{
+    right: 4%;
+    transition: ease-in-out 0.4s;
+}
+/* just part End */
  
