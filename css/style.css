@@ -12,9 +12,8 @@
     box-sizing: border-box;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
-
 ul, ol{
     list-style: none;
     padding: 0;
@@ -70,6 +69,7 @@ img{
 /* hero part start */
 #hero-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .navbar-toggler{
     padding: 0;
@@ -153,6 +153,7 @@ header{
 /* brands part start */
 #brands-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .brands-header span{
     font-size: 16px;
@@ -170,6 +171,7 @@ header{
 /* just part start */
 #just-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .just-slider{
     position: relative;
@@ -207,7 +209,7 @@ header{
     font-family: var(--font-family);
 }
 .card-group .card{
-    margin: 0 20px;
+    margin: 0 15px;
 }
 .card-group .card .card-img{
     position: relative;
@@ -242,7 +244,7 @@ header{
     background: var(--white);
     box-shadow: 0 0 10px var(--white);
     position: absolute;
-    right: -100%;
+    right: -120%;
     top: 5%;
     transition: ease-in-out 0.4s;
 }
@@ -280,6 +282,7 @@ header{
 /* categories part start */
 #categories{
     background: var(--white);
+    overflow-x: hidden;
 }
 .categorites-content .card .card-body h6{
     font-size: 16px;
@@ -326,6 +329,7 @@ header{
 /* best-seller part start */
 #seller-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .seller-content .card{
     overflow: hidden;
@@ -406,6 +410,7 @@ header{
 /* hundreds part start */
 #hundreds-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .hundreds-text{
     max-width: 300px;
@@ -427,6 +432,7 @@ header{
 /* video part start */
 #video-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .video-header span{
     color: var(--blue);
@@ -442,6 +448,7 @@ header{
 /* article part start */
 #article-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 .article-image .card .card-body h5{
     font-size: 16px;
@@ -451,11 +458,13 @@ header{
 /* instagram part start */
 #instagram-section{
     background: var(--white);
+    overflow-x: hidden;
 }
 /* instagram part End */
 /* service part start */
 #service-section{
     background-color: var(--white);
+    overflow-x: hidden;
 }
 .service-content .card .icon{
     width: 35px;
@@ -477,6 +486,7 @@ header{
 /* footer part start */
 footer{
     background: var(--white);
+    overflow-x: hidden;
 }
 .footer-logo address span{
     font-size: 16px;
