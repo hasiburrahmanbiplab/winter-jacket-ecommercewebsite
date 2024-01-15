@@ -41,6 +41,12 @@ h1, h2, h3, h4, h5, h6{
 img{
     vertical-align: middle;
 }
+.common-heading h2{
+    font-size: 35px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--primary);
+}
 /* hero part start */
 #hero-section{
     background: var(--white);
@@ -139,15 +145,11 @@ header{
 #just-section{
     background: var(--white);
 }
-.just-header h2{
-    font-size: 40px;
-    font-family: var(--font-family);
-}
 .just-slider{
     position: relative;
 }
 .just-slider .slick-dots{
-    display: flex !important;
+    display: flex;
     justify-content: center;
     gap: 10px;
     position: absolute;
@@ -249,4 +251,126 @@ header{
     transition: ease-in-out 0.4s;
 }
 /* just part End */
- 
+/* categories part start */
+#categories{
+    background: var(--white);
+}
+.categorites-content .card .card-body h6{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.categories-content-2{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.categories-content-2 .card{
+    position: relative;
+    overflow: hidden;
+    transition: ease-in-out 0.3s
+}
+.categories-content-2 .card:hover .overly{
+    bottom: 0;
+    transition: ease-in-out 0.3s;
+}
+.categories-content-2 .card .overly{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.212);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+    transition: ease-in-out 0.3s
+}
+.categories-content-2 .card .overly h5{
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+.categories-btn button{
+    font-size: 14px;
+    font-family: var(--font-family);
+}
+.categories-btn button:hover .right-arrow{
+    transform: rotate(-15deg);
+}
+/* categories part End */
+/* best-seller part start */
+.seller-content .card{
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+.seller-content .card .card-img{
+    position: relative;
+}
+.seller-content .card .card-img .overly-1{
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    box-shadow: 0 0 10px var(--white);
+    border-radius: 8px;
+}
+.seller-content .card .card-img .overly-1 a{
+    font-size: 14px;
+}
+.seller-content .card .card-img .overly-2{
+    width: 50%;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: -100%;
+    top: 5%;
+    transition: ease-in-out 0.3s;
+}
+.seller-content .card .card-img .overly-2 a{
+    width: 30px;
+    height: 30px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seller-content .card .card-img .overly-2 .offer a{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--white);
+    width: 55px;
+    height: 25px;
+    background-color: green;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--white);
+}
+.seller-content .card .card-img .overly-3{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: -100%;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0 0 10px var(--banner-color);
+}
+.seller-content .card .card-img:hover .overly-2{
+    right: 5%;
+    transition: ease-in-out 0.3s;
+}
+.seller-content .card .card-img:hover .overly-3{
+    right: 5%;
+    transition: ease-in-out 0.3s;
+}
+/* best-seller part End */
