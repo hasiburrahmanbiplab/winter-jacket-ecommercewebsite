@@ -47,6 +47,22 @@ img{
     font-weight: 500;
     color: var(--primary);
 }
+.common-btn button{
+    font-size: 14px;
+    color: var(--primary);
+    font-family: var(--font-family);
+    font-weight: 500;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--primary);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.common-btn button:hover .right-arrow{
+    transform: rotate(-25deg);
+}
 /* hero part start */
 #hero-section{
     background: var(--white);
@@ -128,6 +144,9 @@ header{
 }
 /* hero part End */
 /* brands part start */
+#brands-section{
+    background: var(--white);
+}
 .brands-header span{
     font-size: 16px;
     font-family: var(--font-family);
@@ -275,7 +294,7 @@ header{
 .categories-content-2 .card .overly{
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.212);
+    background: rgba(0, 0, 0, 0.473);
     position: absolute;
     left: 0;
     bottom: -100%;
@@ -361,7 +380,7 @@ header{
     border-radius: 50%;
     position: absolute;
     bottom: 5%;
-    right: -100%;
+    right: -110%;
     transition: ease-in-out 0.3s;
     box-shadow: 0 0 10px var(--banner-color);
 }
@@ -374,3 +393,74 @@ header{
     transition: ease-in-out 0.3s;
 }
 /* best-seller part End */
+/* hundreds part start */
+#hundreds-section{
+    background: var(--white);
+}
+.hundreds-text{
+    max-width: 300px;
+}  
+.hundreds-text span{
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: var(--blue);
+}
+.hundreds-text h5{
+    font-size: 35px;
+    font-family: var(--font-family);
+}
+.hundreds-text p{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+/* hundreds part End */
+/* video part start */
+#video-section{
+    background: var(--white);
+}
+.video-header span{
+    color: var(--blue);
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+#video-section .video-part{
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/* video part End */
+/* article part start */
+#article-section{
+    background: var(--white);
+}
+.article-image .card .card-body h5{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+/* article part End */
+/* instagram part start */
+#instagram-section{
+    background: var(--white);
+}
+/* instagram part End */
+/* service part start */
+#service-section{
+    background-color: var(--white);
+}
+.service-content .card .icon{
+    width: 35px;
+    height: 35px;
+}
+.service-content .card .icon img{
+    width: 100%; 
+    height: 100%;
+}
+.service-content .card .card-body h5{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.service-content .card .card-body p{
+    font-size: 12px;
+    font-family: var(--font-family);
+}
+/* service part End */
