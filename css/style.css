@@ -11,6 +11,10 @@
     outline: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
+
 ul, ol{
     list-style: none;
     padding: 0;
@@ -102,11 +106,11 @@ header{
 }
 .main-navbar .main-nav li .dropdown-menu{
    width: 50px;
-   background: rgba(255, 255, 255, 0.356);
+   background: rgb(255, 255, 255);
    padding: 0;
    border: 0;
    border-radius: 0;
-   box-shadow: 0 0 3px rgba(0, 0, 0, 0.397);
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.397);
    z-index: 1000;
 }
 .main-navbar .main-nav li .dropdown-menu li{
@@ -117,6 +121,9 @@ header{
    font-family: var(--font-family);
    color: var(--primary);
    font-weight: 400;
+}
+.dropdown-item:hover {
+	background: rgba(139, 136, 136, 0.726);
 }
 .banner-part{
     background: var(--banner-color);
@@ -317,6 +324,9 @@ header{
 }
 /* categories part End */
 /* best-seller part start */
+#seller-section{
+    background: var(--white);
+}
 .seller-content .card{
     overflow: hidden;
     transition: ease-in-out 0.3s;
@@ -464,3 +474,76 @@ header{
     font-family: var(--font-family);
 }
 /* service part End */
+/* footer part start */
+footer{
+    background: var(--white);
+}
+.footer-logo address span{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.footer-logo a{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.footer-item h6{
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--primary);
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.footer-item ul li a{
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--primary);
+}
+.footer-item p{
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--primary);
+}
+.newsletter{
+    max-width: 300px;
+}
+.newsletter form{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+}
+.newsletter form input::placeholder{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--primary);
+}
+.newsletter form .form-btn a{
+    width: 30px;
+    height: 30px;
+    background: var(--blue);
+}
+.copyright .text p{
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--primary);
+}
+.copyright ul li a{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--primary);
+}
+.copyright .payment ul li{
+    width: 40px;
+    height: 40px;
+}
+.copyright .payment ul li a{
+    width: 100%;
+    height: 100%;
+}
+/* footer part End */
+
